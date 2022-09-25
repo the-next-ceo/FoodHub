@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import foodHub from "./homepage/home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+   <div className="App">
+    {/* <span>{Navbar()}</span> */}
+    
+    <span>{foodHub()}</span>
+    {/* <span className="tenor-gif-embed" data-postid="6079735" data-share-method="host" data-aspect-ratio="2.06612" data-width="100%"><a href="https://tenor.com/view/okonomiyaki-japanese-food-anime-food-gif-6079735">Okonomiyaki Japanese Food GIF</a>from <a href="https://tenor.com/search/okonomiyaki-gifs">Okonomiyaki GIFs</a></span> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> */}
+    <img src={require('./gif/food.gif')} alt="food" className='image'/>
+
+
+   </div> 
+   
+
   );
 }
 
