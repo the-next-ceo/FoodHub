@@ -1,73 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Noto+Sans:wght@700&display=swap');
 
 
-/* .title{
-
-    font-family: 'Manrope', sans-serif;
-    font-size:350%;
-    text-align: center;
-    padding: 30px;
-    line-height: 50px;
-    color: white;
-    align-items: center;
-
-} */
-
-/* .ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    gap: 1 rem;
-} */
-
-/* .head{
-    width: 100vw;
-    height: 20vh;
-    display:flexbox;
-    background-color: #030405;
-    color: white;
-} */
-
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
 }
 
-.nav{
+.nav {
     background-color: black;
     color: white;
     justify-content: space-between;
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 0 1rem 2rem;
 }
 
-.nav ul{
+
+
+.nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.nav a{
-    color: inherit;
+.nav a {
+    /* color: inherit; */
     font-family: 'Manrope', sans-serif;
     text-decoration: none;
-    /* font-size:350%; */
 
 }
 
-.food{
+.food {
     font-size: 120px;
+    color: rgb(248, 187, 74);
 }
 
-.about{
+.about {
     font-size: 50px;
     padding: 50px;
+    color: white;
 }
 
-.image{
-    padding-top: 50px;
+.image {
+    padding-top: 25px;
+    padding-left: 10px;
+    float: left;
+    z-index: -1;
+}
+
+.food {
+    display: inline-block;
+    position: relative;
+}
+
+.food:hover{
+    color: white;
+    
+}
+.food:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transition-delay: 0.25s;
+    padding: 1px;
+}
+
+.food:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.about:hover{
+    color: orange;
 }
